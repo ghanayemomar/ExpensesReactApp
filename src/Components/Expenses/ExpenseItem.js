@@ -4,8 +4,13 @@ import ExpenseDate from "./ExpenseDate";
 import Card from '../UI/Card';
 
 const  ExpenseItem = (props) => {
-  const clickHandler = () => {
-    console.log("Nah Dont Click Me!")    
+
+  
+let title = props.title
+
+const clickHandler = (props) => {
+ title = "New Title";
+
   };
 
   return (
@@ -14,7 +19,7 @@ const  ExpenseItem = (props) => {
         {/* In this way we call the component and make it recive data to view it! */}
     
       <div className="expense-item__description">
-        <h2>{props.title}</h2>
+        <h2>{title}</h2>
 
         <div className="expense-item__price">${props.amount}</div>
       </div>
