@@ -22,7 +22,7 @@ const ExpenseForm = () => {
     };
 
     const submitHandler = (event) => {
-        event.preventDefual(event);
+        event.preventDefual();
 
         const expenseData = {
         title: enteredTitle,
