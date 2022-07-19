@@ -6,6 +6,7 @@ import Card from '../UI/Card';
 const  ExpenseItem = (props) => {
   
   return (
+    <li>
     <Card className="expense-item">
         <ExpenseDate date={props.date}/> 
         {/* In this way we call the component and make it recive data to view it! */}
@@ -16,6 +17,7 @@ const  ExpenseItem = (props) => {
         <div className="expense-item__price">${props.amount}</div>
       </div>
     </Card>
+    </li>
   );
 }
 export default ExpenseItem;
